@@ -13,7 +13,7 @@ def load_library (file)
   emoticons
 end
 
-binding.pry
+
 def get_japanese_emoticon (file, emote)
   library = load_library(file)
   library.each do |key|
