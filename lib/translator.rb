@@ -6,6 +6,8 @@ def load_library (file)
 
   emoticons.each do |key, value|
     emotes[key] = {}
+    emote[key][:english] = value[0]
+    emote[key][:japanese] = value[1]
   end
 end
 
