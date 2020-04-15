@@ -1,20 +1,21 @@
 require 'yaml'
 
 def load_library (file)
-  emoticons = YAML.load_file(file_path)
-  emotes = {}
+  emotes_src = YAML.load_file(file_path)
+  emoticons = {}
 
-  emoticons.each do |key, value|
-    emotes[key] = {}
-    emote[key][:english] = value[0]
-    emote[key][:japanese] = value[1]
+  emotes_src.each do |key, value|
+    emoticons[key] = {}
+    emoticons[key][:english] = value[0]
+    emoticons[key][:japanese] = value[1]
   end
   emotes
 end
 
 def get_japanese_emoticon (file, emote)
-  file.each do |key|
-    if file[key][:japanese] = emote
+  library = load_library(file)
+  library.each do |key|
+    if file[key][:japanese] == emote
       return file[key]
     end
   end
