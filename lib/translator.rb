@@ -2,7 +2,7 @@
 
 def load_library
   new_hash = {
-    :english =[]
+    :english = []
     :japanese = []
   }
 end
