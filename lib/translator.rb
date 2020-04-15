@@ -2,7 +2,7 @@ require 'pry'
 require 'yaml'
 
 def load_library (file)
-  emotes_src = YAML.load_file(file_path)
+  emotes_src = YAML.load_file(file)
   emoticons = {}
 
   emotes_src.each do |key, value|
