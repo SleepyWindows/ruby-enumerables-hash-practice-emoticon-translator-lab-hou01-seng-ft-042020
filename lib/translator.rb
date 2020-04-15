@@ -16,7 +16,7 @@ end
 
 def get_japanese_emoticon (file, emote)
   library = load_library(file)
-  library[:emoticons].each do |key|
+  library.each do |key|
     if library[key][:japanese] == emote
       return library[key].to_s
     else
