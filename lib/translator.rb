@@ -10,9 +10,10 @@ def load_library (file)
     emoticons[key][:english] = value[0]
     emoticons[key][:japanese] = value[1]
   end
-  emotes
+  emoticons
 end
 
+binding.pry
 def get_japanese_emoticon (file, emote)
   library = load_library(file)
   library.each do |key|
