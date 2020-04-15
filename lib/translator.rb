@@ -1,14 +1,11 @@
-# require modules here
+require 'yaml'
 
-def load_library
-  new_hash = {
-    :english => [],
-    :japanese => []
-  }
+def load_library (file)
+  emoticons = YAML.load_file(file_path)
 end
 
 def get_japanese_emoticon
-  # code goes here
+
 end
 
 def get_english_meaning
