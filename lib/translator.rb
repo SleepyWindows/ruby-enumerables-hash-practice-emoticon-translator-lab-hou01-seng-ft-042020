@@ -9,6 +9,7 @@ def load_library (file)
     emote[key][:english] = value[0]
     emote[key][:japanese] = value[1]
   end
+  emotes
 end
 
 def get_japanese_emoticon (file, emote)
